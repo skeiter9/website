@@ -1,1 +1,54 @@
-@import "placeholders-scss/placeholders-scss";
+@import "common-scss/common";
+
+// App
+$base-font: em(16px);
+
+.logo--main{
+	@extend %display-block ;
+	@extend %block-center ;
+	width: em(106);
+}
+.header_leme {
+	@extend %display-block ;
+
+	@extend %margin-top-16;
+	@extend %margin-bottom-16;
+
+	@extend %width-100percent ;
+	@extend %text-align-center; 
+}
+
+.header__title {
+	@extend %text-align-center; 
+	margin: 1em auto;
+	font-size: 1.6em;
+}
+%content {
+	padding:1em;
+}
+.content--gretting {
+	@extend %content;
+}
+.content--suscription { 
+	@extend %content;
+	svg {
+		@extend %float-left;
+		width: em(40);
+	}
+	
+}
+
+
+
+.content--gretting_text {
+	text-align: justify;
+}
+
+.content--contact {
+	@extend %content;
+	a {
+		display: block;
+		padding: $base-font/2;
+		text-decoration: none;
+	}
+}
